@@ -1,5 +1,9 @@
 import React, {Component} from 'react';
 
+
+var style = {
+    width:"100%"
+}
 class Main extends Component{
 
   constructor(props){
@@ -11,16 +15,18 @@ class Main extends Component{
 
   }
 
+  
+
 
   render(){
   return (
-      <div>
+      <div style={style} >
         <iframe
             id="myMap"
-            width={window.innerWidth}
+            width="100%"
             height={window.innerHeight}
             src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBiVWpxtYlvfkrUsjiFmynKRxHUGABhKKA
-            &q=Space+Needle,Seattle+WA&maptype=roadmap" allowfullscreen>
+            &q=KAIST&maptype=roadmap" allowfullscreen>
         </iframe>
       </div>
   )
