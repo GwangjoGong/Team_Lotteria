@@ -5,12 +5,10 @@ import './App.css';
 import {SideNav, Nav} from 'react-sidenav';
 
 import Main from './components/main_component';
+import Lost from './components/lost_component';
+import Found from './components/found_component';
 import AppNavigation from './components/navigation_component';
-import { R_OK } from 'constants';
 
-var style = {
-  flex: "1"
-}
 
 
 class App extends Component{
@@ -33,9 +31,11 @@ class App extends Component{
           <Title> TEAM LOTTERIA </Title>
           <AppNavigation />
         </Navigation>
-        <Body style={style}>
+        <Body>
           <Switch>
-            <Route path="/" exact component={props => <Main/>}></Route>
+            <Route path="/main" exact component={props => <Main/>}></Route>
+            <Route path="/found" component={props=><Found/>}></Route>
+            <Route path="/lost" component={props=><Lost/>}></Route>
           </Switch>
         </Body>
       </AppContainer>

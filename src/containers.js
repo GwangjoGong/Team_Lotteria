@@ -4,6 +4,7 @@ export const AppContainer = styled.div`
   display: flex;
   height: 100%;
   width: 100%;
+  overflow: hidden;
 `;
 
 export const Navigation = styled.div`
@@ -17,6 +18,8 @@ export const Body = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-y : hidden;
+  flex : 1;
 `;
 
 export const Title = styled.div`

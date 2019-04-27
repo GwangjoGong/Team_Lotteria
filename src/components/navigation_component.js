@@ -22,30 +22,30 @@ const SideNav = withRR4();
 class AppNavigation extends React.Component {
     render() {
       return (
-        <SideNav theme={theme} defaultSelectedPath={"home"}>
-          <Nav id="home">
+        <SideNav theme={theme} defaultSelectedPath={"main"}>
+          <Nav id="main">
             <NavIcon>
               <Icon icon={home} />
             </NavIcon>
             <Text>Home</Text>
           </Nav>
-          <Nav id="basic">
+          <Nav id="lost">
             <NavIcon>
               <Icon icon={simple} />
             </NavIcon>
-            <Text>Basic Example</Text>
+            <Text>Lost</Text>
           </Nav>
-          <Nav id="renderitems">
+          <Nav id="found">
+            <NavIcon>
+              <Icon icon={simple} />
+            </NavIcon>
+            <Text>Found</Text>
+          </Nav>
+          <Nav id="temp">
             <NavIcon>
               <Icon icon={render} />
             </NavIcon>
-            <Text>Render Ex. 1</Text>
-          </Nav>
-          <Nav id="renderitems2">
-            <NavIcon>
-              <Icon icon={render} />
-            </NavIcon>
-            <Text>Render Ex. 2</Text>
+            <Text>AMOLA</Text>
           </Nav>
         </SideNav>
       );

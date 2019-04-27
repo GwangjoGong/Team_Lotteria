@@ -2,7 +2,8 @@ import React, {Component} from 'react';
 
 
 var style = {
-    width:"100%"
+    width:"100%",
+    
 }
 class Main extends Component{
 
@@ -30,7 +31,7 @@ class Main extends Component{
         </iframe>
       </div>
   )
-  }
+  } 
 }
 
 export default Main;
